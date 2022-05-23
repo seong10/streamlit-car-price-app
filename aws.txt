@@ -32,7 +32,7 @@ cd ~ : 내 아이디인 ec2-user 의 홈 디렉토리로 이동
 cd .. : 하나 윗경로로 이동
 cd . : 점 한개는 현재 디렉토리
 cd /home : 해당 디렉토리로 이동
-ls : list의 약자 지금 경로에 있는 폴더들 다 보여주기
+ls , ll : list의 약자 지금 경로에 있는 폴더들 다 보여주기
 ls -l : ls를 자세하게 보여달라.
 exit : 종료
 clear : 작업 내역들 청소
@@ -40,18 +40,38 @@ wget : 다운로드
 	* 붙여넣기 는 마우스 오른쪽 클릭
 sh : 실행
 
-conda create -n streamlit3.7 python=3.7 numpy scipy matplotlib ipython scikit-learn pandas pillow jupyter seaborn
+vi (파일이름) : 에디터/파일수정
 
+------
+	## 가상환경 만들기
+conda create -n streamlit3.7 python=3.7 numpy scipy matplotlib ipython scikit-learn pandas pillow jupyter seaborn
+	      (가상환경이름) 파이썬 설치하고 넘파이 등등 설치
 python --version : 버전확인
 python
-컨트롤 D 꺼짐
-컨트롤 C 현재재생꺼짐
+
+	컨트롤 D 꺼짐
+	컨트롤 C 현재재생꺼짐
 
 pip 해서 다운로드 할수도
 
-conda env list
-conda activate streamlit3.7 (가상경로 이동)
+conda env list (경로 리스트)
+conda activate streamlit3.7 (해당 가상경로 이동)
 
+conda install joblib
+scikit-learn
+
+----- git 설치
+sudo yum install git
+	yum : 리눅스용 프로그램을 모아둔곳
+	sudo : 슈퍼관리자로서 프로그램을 깔겠다
+
+git clone (git clone http 주소)
+
+## yum 업데이트
+sudo yum update
+sudo yum upgrade
+
+------
 내 컴퓨터에서 
 pkp 파일로 하는게 2t
 리눅스에 접속해서 하는것
